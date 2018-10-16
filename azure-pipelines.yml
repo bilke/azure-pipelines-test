@@ -16,4 +16,6 @@ steps:
   #inputs:
     #script: echo %MYSECRET%
     #    env: { MySecret: $(FOO_SECRET) } # mapping of environment variables to add
-  script: echo %MYSECRET% env: MySecret: $(Foo)
+  - script: echo %MYSECRET%
+    env:
+      MySecret: $(FOO_SECRET)
