@@ -15,4 +15,4 @@ steps:
 - task: CmdLine@2
   inputs:
     script: echo %MYSECRET%
-    env: MySecret: $(FOO_SECRET) # mapping of environment variables to add
+    env: { MySecret: $(FOO_SECRET) } # mapping of environment variables to add
